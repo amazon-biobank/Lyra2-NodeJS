@@ -1,4 +1,4 @@
-const lyra2 = require ('../build/Release/lyra2');
+const lyra2 = require ('./build/Release/lyra2.node');
 
 const generateSalt = (saltLength) => lyra2.getSalt(saltLength);
 const LyraHash = (input, salt, saltLength) => lyra2.getHash(input, salt, saltLength);
